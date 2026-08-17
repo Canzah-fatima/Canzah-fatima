@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,20,28,32,40&height=280&section=header&text=Kanza%20Fatima&fontAlign=center&fontAlignY=36&fontSize=62&fontColor=ffffff&fontFamily=Playfair%20Display&fontStyle=italic&fontWeight=700&letterSpacing=2&desc=SOFTWARE%20ENGINEER%20%E2%80%A2%20AI%2FML%20SYSTEMS%20ARCHITECT&descFontSize=14&descAlignY=62&descFontFamily=Montserrat&descLetterSpacing=3&stroke=6366F1&strokeWidth=2" alt="Header Banner" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,1,2,3,4&height=280&section=header&text=Kanza%20Fatima&fontAlign=center&fontAlignY=36&fontSize=62&fontColor=ffffff&fontFamily=Playfair%20Display&fontStyle=italic&fontWeight=700&letterSpacing=2&desc=SOFTWARE%20ENGINEER%20%E2%80%A2%20AI%2FML%20SYSTEMS%20ARCHITECT&descFontSize=14&descAlignY=62&descFontFamily=Montserrat&descLetterSpacing=3&stroke=2D3748&strokeWidth=2" alt="Header Banner" width="100%" />
+</div>
 
   <p align="center">
     <a href="https://github.com/Canzah-fatima">
@@ -338,10 +339,9 @@ Built and deployed responsive full-stack web applications using modern frontend 
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Canzah-fatima&bg_color=0D1117&color=9D4EDD&line=7B2CBF&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" width="95%" />
 </div>
 
-
 <div align="center">
   <br>
   <sub>"Engineering elegance lies in making complex systems reliably invisible."</sub>
   <br><br>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=38,24,12,6&height=180&section=footer&animation=fadeIn" alt="Footer Banner" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=4,3,2,1,0&height=180&section=footer&animation=fadeIn&stroke=2D3748&strokeWidth=1" alt="Footer Banner" width="100%" />
 </div>
