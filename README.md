@@ -1,27 +1,30 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24,38,50&height=280&section=header&text=KANZA%20FATIMA&fontSize=54&fontColor=ffffff&desc=SOFTWARE%20ENGINEER%20%E2%80%A2%20AI%2FML%20SYSTEMS%20ARCHITECT&descFontSize=16&descSize=16&descAlignY=62&fontAlignY=36&stroke=C77DFF&strokeWidth=2" alt="Header Banner" width="100%" />
-
-  <a href="https://github.com/Canzah-fatima">
-    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&duration=2800&pause=900&color=C77DFF&center=true&vCenter=true&width=620&lines=Full-Stack+Architect+%26+System+Engineer;Building+Next-Gen+AI+%2F+ML+Pipelines;Distributed+Systems+%E2%80%A2+Cloud+Native+Infra" alt="Typing SVG" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,20,28,32,40&height=280&section=header&text=Kanza%20Fatima&fontAlign=center&fontAlignY=36&fontSize=62&fontColor=ffffff&fontFamily=Playfair%20Display&fontStyle=italic&fontWeight=700&letterSpacing=2&desc=SOFTWARE%20ENGINEER%20%E2%80%A2%20AI%2FML%20SYSTEMS%20ARCHITECT&descFontSize=14&descAlignY=62&descFontFamily=Montserrat&descLetterSpacing=3&stroke=6366F1&strokeWidth=2" alt="Header Banner" width="100%" />
 
   <p align="center">
-    <img src="https://img.shields.io/badge/Degree-B.S._Software_Engineering-3C096C?style=for-the-badge&logo=academia&logoColor=E0AAFF" alt="Degree" />
-    <img src="https://img.shields.io/badge/Institution-Superior_University-240046?style=for-the-badge&logo=google-classroom&logoColor=E0AAFF" alt="Institution" />
-    <img src="https://img.shields.io/badge/Location-Islamabad%2C_Pakistan-10002B?style=for-the-badge&logo=google-maps&logoColor=E0AAFF" alt="Location" />
+    <a href="https://github.com/Canzah-fatima">
+      <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&duration=2800&pause=900&color=818CF8&center=true&vCenter=true&width=620&lines=Full-Stack+Architect+%26+System+Engineer;Building+Next-Gen+AI+%2F+ML+Pipelines;Distributed+Systems+%E2%80%A2+Cloud+Native+Infra" alt="Typing SVG" />
+    </a>
   </p>
 
   <p align="center">
-    <a href="https://canzah-fatima.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-7B2CBF?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" /></a>
+    <img src="https://img.shields.io/badge/Degree-B.S._Software_Engineering-312E81?style=for-the-badge&logo=academia&logoColor=C7D2FE" alt="Degree" />
+    <img src="https://img.shields.io/badge/Institution-Superior_University-1E1B4B?style=for-the-badge&logo=google-classroom&logoColor=C7D2FE" alt="Institution" />
+    <img src="https://img.shields.io/badge/Location-Islamabad%2C_Pakistan-0F172A?style=for-the-badge&logo=google-maps&logoColor=C7D2FE" alt="Location" />
+  </p>
+</div>
+
+  <p align="center">
+    <a href="https://canzah-fatima.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-4F46E5?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" /></a>
     <a href="https://linkedin.com"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="mailto:kanzafatima.dev@gmail.com"><img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
     <a href="https://github.com/Canzah-fatima"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   </p>
 
   <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=Canzah-fatima&label=Profile%20Views&color=7b2cbf&style=flat-square" alt="Profile Views" />
-    <img src="https://img.shields.io/github/followers/Canzah-fatima?label=Followers&style=flat-square&color=5a189a" alt="Followers" />
-    <img src="https://img.shields.io/github/stars/Canzah-fatima?label=Stars&style=flat-square&color=3c096c" alt="Stars" />
+    <img src="https://komarev.com/ghpvc/?username=Canzah-fatima&label=Profile%20Views&color=4338ca&style=flat-square" alt="Profile Views" />
+    <img src="https://img.shields.io/github/followers/Canzah-fatima?label=Followers&style=flat-square&color=3730a3" alt="Followers" />
+    <img src="https://img.shields.io/github/stars/Canzah-fatima?label=Stars&style=flat-square&color=1e1b4b" alt="Stars" />
   </p>
 </div>
 
