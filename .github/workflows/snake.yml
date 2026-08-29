@@ -1,9 +1,14 @@
-name: Generate Contribution Snake
+name: Custom Contribution Snake
 
 on:
+  workflow_dispatch:
+
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
+
+  push:
+    branches:
+      - main
 
 jobs:
   generate:
@@ -13,18 +18,21 @@ jobs:
       contents: write
 
     steps:
-      - name: Generate Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%23C084FC&color_dots=%23151A21,%23251A3A,%233B2660,%236434A8,%239B5DE5
-            dist/github-contribution-grid-snake-dark.svg?color_snake=%23C084FC&color_dots=%23151A21,%23251A3A,%233B2660,%236434A8,%239B5DE5
 
-      - name: Publish Snake
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          build_dir: dist
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate custom snake
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TARGET_BRANCH: output
+          GITHUB_USER_NAME: ${{ github.repository_owner }}
+        run: |
+          python scripts/generate_snake.py
+
+      - name: Publish animation
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          force_orphan: true
