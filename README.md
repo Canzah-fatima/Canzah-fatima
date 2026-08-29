@@ -344,21 +344,21 @@ Built and deployed responsive full-stack web applications using modern frontend 
 ## 11. Contribution Snake
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Canzah-fatima/Canzah-fatima/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" width="100%" />
+
+  <img
+    src="https://raw.githubusercontent.com/Canzah-fatima/Canzah-fatima/output/github-contribution-grid-snake-dark.svg"
+    alt="Contribution Activity"
+    width="95%"
+  />
+  <br>
+  <sub>
+    <b>Still learning. Still building. Still figuring things out.</b>
+    <br>
+    Some days it's code, some days it's debugging. Either way, we move.
+  </sub>
+
 </div>
 
----
-
 <div align="center">
-  <br>
-  <sub>"Engineering elegance lies in making complex systems reliably invisible."</sub>
-  <br><br>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=4,3,2,1,0&height=180&section=footer&animation=fadeIn&stroke=2D3748&strokeWidth=1" alt="Footer Banner" width="100%" />
-</div>
-
-<div align="center">
-  <br>
-  <sub>"Engineering elegance lies in making complex systems reliably invisible."</sub>
-  <br><br>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=4,3,2,1,0&height=180&section=footer&animation=fadeIn&stroke=2D3748&strokeWidth=1" alt="Footer Banner" width="100%" />
 </div>
