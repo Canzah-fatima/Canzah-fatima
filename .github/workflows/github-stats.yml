@@ -13,31 +13,404 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate stats
+      - name: Generate GitHub statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p assets
+          python3 <<'PY'
+          import json
+          import os
+          import urllib.request
+          from collections import Counter
 
-          curl -L \
-            "https://github-readme-stats.vercel.app/api?username=Canzah-fatima&show_icons=true&theme=tokyonight" \
-            -o assets/github-stats.svg
+          USERNAME = "Canzah-fatima"
+          TOKEN = os.environ["GITHUB_TOKEN"]
 
-          curl -L \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=Canzah-fatima&layout=compact&theme=tokyonight" \
-            -o assets/top-languages.svg
+          API = "https://api.github.com"
 
-      - name: Commit generated cards
+          def github_get(path):
+              request = urllib.request.Request(
+                  API + path,
+                  headers={
+                      "Authorization": f"Bearer {TOKEN}",
+                      "Accept": "application/vnd.github+json",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "github-stats-generator"
+                  }
+              )
+
+              with urllib.request.urlopen(request) as response:
+                  return json.loads(response.read().decode("utf-8"))
+
+          # ---------------------------------------------------------
+          # Fetch profile
+          # ---------------------------------------------------------
+
+          profile = github_get(f"/users/{USERNAME}")
+
+          followers = profile.get("followers", 0)
+          public_repos = profile.get("public_repos", 0)
+
+          # ---------------------------------------------------------
+          # Fetch repositories
+          # ---------------------------------------------------------
+
+          repos = []
+          page = 1
+
+          while True:
+              batch = github_get(
+                  f"/users/{USERNAME}/repos?per_page=100&page={page}&type=owner"
+              )
+
+              if not batch:
+                  break
+
+              repos.extend(batch)
+
+              if len(batch) < 100:
+                  break
+
+              page += 1
+
+          # ---------------------------------------------------------
+          # Calculate stars and forks
+          # ---------------------------------------------------------
+
+          total_stars = sum(
+              repo.get("stargazers_count", 0)
+              for repo in repos
+          )
+
+          total_forks = sum(
+              repo.get("forks_count", 0)
+              for repo in repos
+          )
+
+          # ---------------------------------------------------------
+          # Calculate languages
+          # ---------------------------------------------------------
+
+          languages = Counter()
+
+          for repo in repos:
+              if repo.get("fork"):
+                  continue
+
+              owner = repo["owner"]["login"]
+              name = repo["name"]
+
+              try:
+                  language_data = github_get(
+                      f"/repos/{owner}/{name}/languages"
+                  )
+
+                  for language, amount in language_data.items():
+                      languages[language] += amount
+
+              except Exception:
+                  continue
+
+          top_languages = languages.most_common(6)
+
+          # ---------------------------------------------------------
+          # SVG helpers
+          # ---------------------------------------------------------
+
+          def escape(text):
+              return (
+                  str(text)
+                  .replace("&", "&amp;")
+                  .replace("<", "&lt;")
+                  .replace(">", "&gt;")
+                  .replace('"', "&quot;")
+                  .replace("'", "&apos;")
+              )
+
+          def svg_header(width, height):
+              return f'''<svg xmlns="http://www.w3.org/2000/svg"
+                  width="{width}"
+                  height="{height}"
+                  viewBox="0 0 {width} {height}">
+                <defs>
+                  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#0d1117"/>
+                    <stop offset="100%" stop-color="#15111f"/>
+                  </linearGradient>
+
+                  <linearGradient id="purple" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#a855f7"/>
+                    <stop offset="100%" stop-color="#7c3aed"/>
+                  </linearGradient>
+                </defs>
+
+                <rect
+                  x="1"
+                  y="1"
+                  width="{width - 2}"
+                  height="{height - 2}"
+                  rx="18"
+                  fill="url(#bg)"
+                  stroke="#2d3748"
+                  stroke-width="1.5"
+                />
+              '''
+
+          # ---------------------------------------------------------
+          # GitHub Stats SVG
+          # ---------------------------------------------------------
+
+          width = 820
+          height = 310
+
+          stats = svg_header(width, height)
+
+          stats += '''
+            <text
+              x="40"
+              y="52"
+              fill="#f8fafc"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="22"
+              font-weight="700">
+              GitHub Overview
+            </text>
+
+            <text
+              x="40"
+              y="78"
+              fill="#94a3b8"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="13">
+              Kanza Fatima • GitHub activity
+            </text>
+          '''
+
+          cards = [
+              ("PUBLIC REPOSITORIES", public_repos),
+              ("FOLLOWERS", followers),
+              ("STARS EARNED", total_stars),
+              ("TOTAL FORKS", total_forks),
+          ]
+
+          x_positions = [40, 235, 430, 625]
+
+          for (label, value), x in zip(cards, x_positions):
+              stats += f'''
+                <rect
+                  x="{x}"
+                  y="112"
+                  width="165"
+                  height="130"
+                  rx="14"
+                  fill="#111827"
+                  stroke="#293548"
+                  stroke-width="1"
+                />
+
+                <circle
+                  cx="{x + 22}"
+                  cy="137"
+                  r="5"
+                  fill="url(#purple)"
+                />
+
+                <text
+                  x="{x + 36}"
+                  y="142"
+                  fill="#a78bfa"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="10"
+                  font-weight="700"
+                  letter-spacing="0.8">
+                  {escape(label)}
+                </text>
+
+                <text
+                  x="{x + 20}"
+                  y="193"
+                  fill="#f8fafc"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="32"
+                  font-weight="700">
+                  {escape(value)}
+                </text>
+
+                <rect
+                  x="{x + 20}"
+                  y="214"
+                  width="70"
+                  height="3"
+                  rx="2"
+                  fill="url(#purple)"
+                />
+              '''
+
+          stats += f'''
+            <text
+              x="40"
+              y="278"
+              fill="#64748b"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="11">
+              Automatically generated from GitHub API • Updated daily
+            </text>
+
+          </svg>
+          '''
+
+          os.makedirs("assets", exist_ok=True)
+
+          with open("assets/github-stats.svg", "w", encoding="utf-8") as file:
+              file.write(stats)
+
+          # ---------------------------------------------------------
+          # Top Languages SVG
+          # ---------------------------------------------------------
+
+          width = 820
+          height = 310
+
+          langs = svg_header(width, height)
+
+          langs += '''
+            <text
+              x="40"
+              y="52"
+              fill="#f8fafc"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="22"
+              font-weight="700">
+              Top Languages
+            </text>
+
+            <text
+              x="40"
+              y="78"
+              fill="#94a3b8"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="13">
+              Languages used across original repositories
+            </text>
+          '''
+
+          total_bytes = sum(amount for _, amount in top_languages) or 1
+
+          language_colors = [
+              "#a855f7",
+              "#6366f1",
+              "#22d3ee",
+              "#34d399",
+              "#f59e0b",
+              "#f472b6",
+          ]
+
+          y = 112
+
+          for index, (language, amount) in enumerate(top_languages):
+
+              percentage = (amount / total_bytes) * 100
+
+              color = language_colors[
+                  index % len(language_colors)
+              ]
+
+              bar_width = int(
+                  max(20, min(680, percentage * 6.5))
+              )
+
+              langs += f'''
+                <text
+                  x="40"
+                  y="{y + 16}"
+                  fill="#e2e8f0"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="13"
+                  font-weight="600">
+                  {escape(language)}
+                </text>
+
+                <text
+                  x="760"
+                  y="{y + 16}"
+                  fill="#94a3b8"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="12"
+                  text-anchor="end">
+                  {percentage:.1f}%
+                </text>
+
+                <rect
+                  x="40"
+                  y="{y + 27}"
+                  width="700"
+                  height="9"
+                  rx="5"
+                  fill="#1e293b"
+                />
+
+                <rect
+                  x="40"
+                  y="{y + 27}"
+                  width="{bar_width}"
+                  height="9"
+                  rx="5"
+                  fill="{color}"
+                />
+              '''
+
+              y += 32
+
+          langs += '''
+            <text
+              x="40"
+              y="292"
+              fill="#64748b"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="11">
+              Automatically generated from GitHub repository language data
+            </text>
+
+          </svg>
+          '''
+
+          with open("assets/top-languages.svg", "w", encoding="utf-8") as file:
+              file.write(langs)
+
+          print("Generated:")
+          print(" - assets/github-stats.svg")
+          print(" - assets/top-languages.svg")
+          print()
+          print("Repositories:", public_repos)
+          print("Followers:", followers)
+          print("Stars:", total_stars)
+          print("Forks:", total_forks)
+          print("Languages:", top_languages)
+          PY
+
+      - name: Validate generated SVG files
+        run: |
+          test -s assets/github-stats.svg
+          test -s assets/top-languages.svg
+
+          grep -q "<svg" assets/github-stats.svg
+          grep -q "<svg" assets/top-languages.svg
+
+          echo "SVG validation successful."
+
+      - name: Commit generated statistics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/*.svg
+          git add assets/github-stats.svg assets/top-languages.svg
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: update GitHub stats"
+            git commit -m "chore: update GitHub statistics"
             git push
           fi
