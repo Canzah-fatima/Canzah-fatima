@@ -1,5 +1,284 @@
-The deployment is currently unavailable
+<svg xmlns="http://www.w3.org/2000/svg"
+        width="820"
+        height="310"
+        viewBox="0 0 820 310">
+      <defs>
+        <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#0d1117"/>
+          <stop offset="100%" stop-color="#15111f"/>
+        </linearGradient>
 
-DEPLOYMENT_PAUSED
+        <linearGradient id="purple" x1="0" x2="1">
+          <stop offset="0%" stop-color="#a855f7"/>
+          <stop offset="100%" stop-color="#7c3aed"/>
+        </linearGradient>
+      </defs>
 
-cle1::gvwj6-1788218527936-7dfec246a1ae
+      <rect
+        x="1"
+        y="1"
+        width="818"
+        height="308"
+        rx="18"
+        fill="url(#bg)"
+        stroke="#2d3748"
+        stroke-width="1.5"
+      />
+    
+  <text
+    x="40"
+    y="52"
+    fill="#f8fafc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="22"
+    font-weight="700">
+    Top Languages
+  </text>
+
+  <text
+    x="40"
+    y="78"
+    fill="#94a3b8"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="13">
+    Languages used across original repositories
+  </text>
+
+      <text
+        x="40"
+        y="128"
+        fill="#e2e8f0"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        font-weight="600">
+        JavaScript
+      </text>
+
+      <text
+        x="760"
+        y="128"
+        fill="#94a3b8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        text-anchor="end">
+        64.2%
+      </text>
+
+      <rect
+        x="40"
+        y="139"
+        width="700"
+        height="9"
+        rx="5"
+        fill="#1e293b"
+      />
+
+      <rect
+        x="40"
+        y="139"
+        width="417"
+        height="9"
+        rx="5"
+        fill="#a855f7"
+      />
+    
+      <text
+        x="40"
+        y="160"
+        fill="#e2e8f0"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        font-weight="600">
+        TypeScript
+      </text>
+
+      <text
+        x="760"
+        y="160"
+        fill="#94a3b8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        text-anchor="end">
+        17.6%
+      </text>
+
+      <rect
+        x="40"
+        y="171"
+        width="700"
+        height="9"
+        rx="5"
+        fill="#1e293b"
+      />
+
+      <rect
+        x="40"
+        y="171"
+        width="114"
+        height="9"
+        rx="5"
+        fill="#6366f1"
+      />
+    
+      <text
+        x="40"
+        y="192"
+        fill="#e2e8f0"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        font-weight="600">
+        Jupyter Notebook
+      </text>
+
+      <text
+        x="760"
+        y="192"
+        fill="#94a3b8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        text-anchor="end">
+        14.4%
+      </text>
+
+      <rect
+        x="40"
+        y="203"
+        width="700"
+        height="9"
+        rx="5"
+        fill="#1e293b"
+      />
+
+      <rect
+        x="40"
+        y="203"
+        width="93"
+        height="9"
+        rx="5"
+        fill="#22d3ee"
+      />
+    
+      <text
+        x="40"
+        y="224"
+        fill="#e2e8f0"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        font-weight="600">
+        Python
+      </text>
+
+      <text
+        x="760"
+        y="224"
+        fill="#94a3b8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        text-anchor="end">
+        2.9%
+      </text>
+
+      <rect
+        x="40"
+        y="235"
+        width="700"
+        height="9"
+        rx="5"
+        fill="#1e293b"
+      />
+
+      <rect
+        x="40"
+        y="235"
+        width="20"
+        height="9"
+        rx="5"
+        fill="#34d399"
+      />
+    
+      <text
+        x="40"
+        y="256"
+        fill="#e2e8f0"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        font-weight="600">
+        CSS
+      </text>
+
+      <text
+        x="760"
+        y="256"
+        fill="#94a3b8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        text-anchor="end">
+        0.7%
+      </text>
+
+      <rect
+        x="40"
+        y="267"
+        width="700"
+        height="9"
+        rx="5"
+        fill="#1e293b"
+      />
+
+      <rect
+        x="40"
+        y="267"
+        width="20"
+        height="9"
+        rx="5"
+        fill="#f59e0b"
+      />
+    
+      <text
+        x="40"
+        y="288"
+        fill="#e2e8f0"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        font-weight="600">
+        PowerShell
+      </text>
+
+      <text
+        x="760"
+        y="288"
+        fill="#94a3b8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        text-anchor="end">
+        0.2%
+      </text>
+
+      <rect
+        x="40"
+        y="299"
+        width="700"
+        height="9"
+        rx="5"
+        fill="#1e293b"
+      />
+
+      <rect
+        x="40"
+        y="299"
+        width="20"
+        height="9"
+        rx="5"
+        fill="#f472b6"
+      />
+    
+  <text
+    x="40"
+    y="292"
+    fill="#64748b"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="11">
+    Automatically generated from GitHub repository language data
+  </text>
+
+</svg>

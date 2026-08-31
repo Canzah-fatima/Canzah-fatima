@@ -1,5 +1,248 @@
-The deployment is currently unavailable
+<svg xmlns="http://www.w3.org/2000/svg"
+        width="820"
+        height="310"
+        viewBox="0 0 820 310">
+      <defs>
+        <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#0d1117"/>
+          <stop offset="100%" stop-color="#15111f"/>
+        </linearGradient>
 
-DEPLOYMENT_PAUSED
+        <linearGradient id="purple" x1="0" x2="1">
+          <stop offset="0%" stop-color="#a855f7"/>
+          <stop offset="100%" stop-color="#7c3aed"/>
+        </linearGradient>
+      </defs>
 
-cle1::fwjmg-1788218527846-e0261aba9ef8
+      <rect
+        x="1"
+        y="1"
+        width="818"
+        height="308"
+        rx="18"
+        fill="url(#bg)"
+        stroke="#2d3748"
+        stroke-width="1.5"
+      />
+    
+  <text
+    x="40"
+    y="52"
+    fill="#f8fafc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="22"
+    font-weight="700">
+    GitHub Overview
+  </text>
+
+  <text
+    x="40"
+    y="78"
+    fill="#94a3b8"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="13">
+    Kanza Fatima • GitHub activity
+  </text>
+
+      <rect
+        x="40"
+        y="112"
+        width="165"
+        height="130"
+        rx="14"
+        fill="#111827"
+        stroke="#293548"
+        stroke-width="1"
+      />
+
+      <circle
+        cx="62"
+        cy="137"
+        r="5"
+        fill="url(#purple)"
+      />
+
+      <text
+        x="76"
+        y="142"
+        fill="#a78bfa"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10"
+        font-weight="700"
+        letter-spacing="0.8">
+        PUBLIC REPOSITORIES
+      </text>
+
+      <text
+        x="60"
+        y="193"
+        fill="#f8fafc"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32"
+        font-weight="700">
+        9
+      </text>
+
+      <rect
+        x="60"
+        y="214"
+        width="70"
+        height="3"
+        rx="2"
+        fill="url(#purple)"
+      />
+    
+      <rect
+        x="235"
+        y="112"
+        width="165"
+        height="130"
+        rx="14"
+        fill="#111827"
+        stroke="#293548"
+        stroke-width="1"
+      />
+
+      <circle
+        cx="257"
+        cy="137"
+        r="5"
+        fill="url(#purple)"
+      />
+
+      <text
+        x="271"
+        y="142"
+        fill="#a78bfa"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10"
+        font-weight="700"
+        letter-spacing="0.8">
+        FOLLOWERS
+      </text>
+
+      <text
+        x="255"
+        y="193"
+        fill="#f8fafc"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32"
+        font-weight="700">
+        0
+      </text>
+
+      <rect
+        x="255"
+        y="214"
+        width="70"
+        height="3"
+        rx="2"
+        fill="url(#purple)"
+      />
+    
+      <rect
+        x="430"
+        y="112"
+        width="165"
+        height="130"
+        rx="14"
+        fill="#111827"
+        stroke="#293548"
+        stroke-width="1"
+      />
+
+      <circle
+        cx="452"
+        cy="137"
+        r="5"
+        fill="url(#purple)"
+      />
+
+      <text
+        x="466"
+        y="142"
+        fill="#a78bfa"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10"
+        font-weight="700"
+        letter-spacing="0.8">
+        STARS EARNED
+      </text>
+
+      <text
+        x="450"
+        y="193"
+        fill="#f8fafc"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32"
+        font-weight="700">
+        0
+      </text>
+
+      <rect
+        x="450"
+        y="214"
+        width="70"
+        height="3"
+        rx="2"
+        fill="url(#purple)"
+      />
+    
+      <rect
+        x="625"
+        y="112"
+        width="165"
+        height="130"
+        rx="14"
+        fill="#111827"
+        stroke="#293548"
+        stroke-width="1"
+      />
+
+      <circle
+        cx="647"
+        cy="137"
+        r="5"
+        fill="url(#purple)"
+      />
+
+      <text
+        x="661"
+        y="142"
+        fill="#a78bfa"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10"
+        font-weight="700"
+        letter-spacing="0.8">
+        TOTAL FORKS
+      </text>
+
+      <text
+        x="645"
+        y="193"
+        fill="#f8fafc"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32"
+        font-weight="700">
+        0
+      </text>
+
+      <rect
+        x="645"
+        y="214"
+        width="70"
+        height="3"
+        rx="2"
+        fill="url(#purple)"
+      />
+    
+  <text
+    x="40"
+    y="278"
+    fill="#64748b"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="11">
+    Automatically generated from GitHub API • Updated daily
+  </text>
+
+</svg>
