@@ -305,35 +305,158 @@ Built and deployed responsive full-stack web applications using modern frontend 
 ## 07. Certifications
 
 <div align="center">
-  <img src="https://img.shields.io/badge/AWS-Cloud_Practitioner_Foundations-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Oracle-Certified_Foundations_Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle" />
-  <img src="https://img.shields.io/badge/NPTEL-Cloud_Computing_Architecture-0288D1?style=for-the-badge&logo=google-classroom&logoColor=white" alt="NPTEL" />
-  <img src="https://img.shields.io/badge/Cisco-Network_Addressing_%26_Routing-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco" />
+  <p>
+    <img src="https://img.shields.io/badge/ANTHROPIC-AI%20FLUENCY-111827?style=for-the-badge&logoColor=white" alt="Anthropic AI Fluency" />
+    <img src="https://img.shields.io/badge/CLAUDE-AI%20%26%20AGENTIC%20SYSTEMS-4C1D95?style=for-the-badge&logoColor=white" alt="Claude AI and Agentic Systems" />
+    <img src="https://img.shields.io/badge/DEVELOPER-CLAUDE%20%26%20MCP-312E81?style=for-the-badge&logoColor=white" alt="Claude Developer Technologies" />
+  </p>
+  
+  <h3> AI Fluency</h3>
+
+  <table align="center">
+    <thead>
+      <tr>
+        <th align="center">Certificate</th>
+        <th align="center">Focus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center"><b>AI Fluency for Students</b></td>
+        <td align="center">Effective and responsible AI collaboration for learning and academic workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>AI Fluency for Small Businesses</b></td>
+        <td align="center">Practical AI adoption and AI-augmented business workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>AI Fluency for K-12 Educators</b></td>
+        <td align="center">Responsible AI collaboration in K-12 education</td>
+      </tr>
+      <tr>
+        <td align="center"><b>AI Fluency for Educators</b></td>
+        <td align="center">AI-assisted teaching, learning and educational workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>AI Fluency for Builders</b></td>
+        <td align="center">Building with AI and applying AI fluency principles to technical workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Teaching the AI Fluency Framework</b></td>
+        <td align="center">Teaching and applying the AI Fluency framework</td>
+      </tr>
+      <tr>
+        <td align="center"><b>AI Fluency for Creative Work</b></td>
+        <td align="center">AI collaboration across creative and content workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>AI Fluency for Nonprofits</b></td>
+        <td align="center">Responsible AI adoption for nonprofit organizations</td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+
+  <h3> Claude, Agentic AI & Developer Technologies</h3>
+
+  <table align="center">
+    <thead>
+      <tr>
+        <th align="center">Certificate</th>
+        <th align="center">Focus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center"><b>Introduction to Claude Cowork</b></td>
+        <td align="center">Claude-powered collaborative workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Claude Code in Action</b></td>
+        <td align="center">Agentic software engineering with Claude Code</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Introduction to Subagents</b></td>
+        <td align="center">Specialized AI agents and delegated workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Claude Code 101</b></td>
+        <td align="center">Claude Code fundamentals and AI-assisted development</td>
+      </tr>
+      <tr>
+        <td align="center"><b>AI Fluency: AI Capabilities &amp; Limitations</b></td>
+        <td align="center">AI capabilities, limitations, reliability and responsible use</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Introduction to Model Context Protocol</b></td>
+        <td align="center">MCP fundamentals and connecting AI systems with external tools</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Claude Platform 101</b></td>
+        <td align="center">Claude platform fundamentals and development workflows</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Introduction to Agent Skills</b></td>
+        <td align="center">Agent skills and reusable AI capabilities</td>
+      </tr>
+      <tr>
+        <td align="center"><b>Model Context Protocol: Advanced Topics</b></td>
+        <td align="center">Advanced MCP concepts and integrations</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <h3> Anthropic Learning Portfolio</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/17%20CERTIFICATES-ANTHROPIC-7C3AED?style=for-the-badge&logoColor=white" alt="17 Anthropic Certificates" />
+  </p>
+
+  <p>
+    <code>AI Fluency</code>
+    <code>Claude</code>
+    <code>Claude Code</code>
+    <code>Subagents</code>
+    <code>Agent Skills</code>
+    <code>MCP</code>
+    <code>AI Systems</code>
+  </p>
+
 </div>
 
 ---
 
-## 08. Competitive Programming & Coding Profiles
+## 08. GitHub Analytics
 
 <div align="center">
-  <a href="https://leetcode.com"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black" alt="LeetCode" /></a>
-  <a href="https://geeksforgeeks.org"><img src="https://img.shields.io/badge/GeeksforGeeks-298D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks" /></a>
-  <a href="https://hackerrank.com"><img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="HackerRank" /></a>
-  <a href="https://codechef.com"><img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=CodeChef&logoColor=white" alt="CodeChef" /></a>
-</div>
 
----
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=Canzah-fatima&show_icons=true&theme=tokyonight"
+    alt="GitHub Stats"
+    width="48%"
+  />
 
-## 09. GitHub Analytics
+<br> 
+
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Canzah-fatima&layout=compact&theme=tokyonight"
+    alt="Top Languages"
+    width="40%"
+  />
+
+  <br>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Canzah-fatima&theme=tokyonight&hide_border=true&background=0D1117&ring=9D4EDD&fire=7B2CBF&currStreakLabel=9D4EDD" alt="GitHub Streak" width="48%" />
 </div>
 
+</div>
 
 ---
 
-## 10. Contribution Activity
+## 9. Contribution Activity
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Canzah-fatima&bg_color=0D1117&color=9D4EDD&line=7B2CBF&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" width="95%" />
@@ -341,7 +464,7 @@ Built and deployed responsive full-stack web applications using modern frontend 
 
 ---
 
-## 11. Contribution Snake
+## 10. Contribution Snake
 
 <div align="center">
 
