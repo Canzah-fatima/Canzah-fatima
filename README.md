@@ -431,40 +431,12 @@ Built and deployed responsive full-stack web applications using modern frontend 
 ## 08. GitHub Analytics
 
 <div align="center">
-
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=Canzah-fatima&show_icons=true&theme=tokyonight"
-    alt="GitHub Stats"
-    width="48%"
-  />
-
-<br> 
-
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Canzah-fatima&layout=compact&theme=tokyonight"
-    alt="Top Languages"
-    width="40%"
-  />
-
-  <br>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Canzah-fatima&theme=tokyonight&hide_border=true&background=0D1117&ring=9D4EDD&fire=7B2CBF&currStreakLabel=9D4EDD" alt="GitHub Streak" width="48%" />
-</div>
-
+  <img src="https://streak-stats.demolab.com?user=Canzah-fatima&theme=dark&background=0D1117&border=0D1117&fire=9D4EDD&sideNums=c9d1d9&dates=c9d1d9" alt="GitHub Streak" width="50%" />
 </div>
 
 ---
 
-## 9. Contribution Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Canzah-fatima&bg_color=0D1117&color=9D4EDD&line=7B2CBF&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" width="95%" />
-</div>
-
----
-
-## 10. Contribution Snake
+## 9. Contribution Snake
 
 <div align="center">
 
