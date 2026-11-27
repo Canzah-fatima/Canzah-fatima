@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,1,2,3,4&height=280&section=header&text=Kanza%20Fatima&fontAlign=center&fontAlignY=36&fontSize=62&fontColor=ffffff&fontFamily=Playfair%20Display&fontStyle=italic&fontWeight=700&letterSpacing=2&desc=SOFTWARE%20ENGINEER%20%E2%80%A2%20AI%2FML%20SYSTEMS%20ARCHITECT&descFontSize=14&descAlignY=62&descFontFamily=Montserrat&descLetterSpacing=3&stroke=2D3748&strokeWidth=2" alt="Header Banner" width="100%" />
 </div>
 
@@ -456,4 +456,4 @@ Built and deployed responsive full-stack web applications using modern frontend 
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=4,3,2,1,0&height=180&section=footer&animation=fadeIn&stroke=2D3748&strokeWidth=1" alt="Footer Banner" width="100%" />
-</div>
+</div> -->
