@@ -275,7 +275,7 @@ Built and deployed responsive full-stack web applications using modern frontend 
 * Implemented client-side caching and state management patterns to ensure smooth, low-latency user interfaces.
 
 <!-- Option 1: Brand Colors (Flat-Square) -->
-<p align="center">
+<!-- <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
@@ -456,4 +456,4 @@ Built and deployed responsive full-stack web applications using modern frontend 
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=4,3,2,1,0&height=180&section=footer&animation=fadeIn&stroke=2D3748&strokeWidth=1" alt="Footer Banner" width="100%" />
-</div> -->
+</div> --> -->
